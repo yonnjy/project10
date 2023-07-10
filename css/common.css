@@ -1,0 +1,87 @@
+/* 'Roboto', 'Noto Sans KR' */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+/* 'Noto Serif KR' */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
+/* 'Gamja Flower' */
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+
+body {
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+
+html {
+    font-size: 6.25%;
+}
+
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15rem;
+}
+
+.sec {
+    padding: 100rem 0;
+}
+
+.sec .tit {
+    max-width: 1200rem;
+    margin: 0 auto 30rem auto;
+    padding: 0 15rem;
+}
+
+.sec .tit h2 {
+    font-size: 30rem;
+    font-weight: 700;
+    margin: 0 0 10rem 0;
+}
+
+.sec .tit p {
+    font-size: 15rem;
+    font-weight: 300;
+}
+
+.bg {
+    background: #f9f9f9;
+}
+
+p {
+    font-size: 16rem;
+    line-height: 1.3;
+}
+
+.footer {
+    font-size: 13rem;
+}
+
+.footer .st {
+    font-size: 14rem;
+    font-weight: 500;
+    color: #444;
+}
+
+.footer .copyright {
+    font-size: 12rem;
+    font-weight: 300;
+}
+
+.slick-track,
+.slick-list {
+    transition-delay: 30ms;
+}
+
+.search input[type="text"] {
+    border: none;
+    outline: none;
+    font-family: 'Noto Sans KR';
+}

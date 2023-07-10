@@ -1,0 +1,185 @@
+.header {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 1000;
+}
+
+.header .h_wrap {
+    height: 80rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header h1 {
+    width: 200rem;
+}
+
+.header h1 img {
+    transform: scale(80%);
+}
+
+.header .gnb dl {
+    display: flex;
+    gap: 40rem;
+    font-size: 18rem;
+    font-weight: 500;
+}
+
+.header .gnb dt {
+    transition: 0.6s;
+}
+
+.header .gnb dt:hover {
+    color: #02652f;
+}
+
+.header .gnb dd {
+    /* 수정 */
+    display: none;
+}
+
+.header .login {
+    width: 200rem;
+}
+
+.header .login ul {
+    display: flex;
+    gap: 20rem;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 15rem;
+}
+
+.header .login .st {
+    color: #02652f;
+    font-weight: 500;
+}
+
+.header .login .search {
+    font-size: 20rem;
+    cursor: pointer;
+}
+
+/* main_visual */
+.main_vi {
+    position: relative;
+}
+
+.main_vi .itm {
+    height: calc(100vh - 80rem);
+
+}
+
+.main_vi .itm01 {
+    background: url(../images/main_vi01.jpg) #ddd no-repeat 200rem center/cover;
+
+}
+
+.main_vi .itm02 {
+    background: url(../images/main_vi02.jpg) no-repeat center center/cover;
+}
+
+.main_vi .itm03 {
+    background: url(../images/main_vi03.jpg) no-repeat center center/cover;
+}
+
+.main_vi .itm04 {
+    background: url(../images/main_vi04.jpg) no-repeat center center/cover;
+}
+
+.main_vi .itm05 {
+    background: url(../images/main_vi05.jpg) no-repeat center center/cover;
+}
+
+.main_vi .slogan {
+    position: absolute;
+    top: 15%;
+}
+
+.main_vi .slogan strong {
+    display: block;
+    font-size: 50rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: 0 0 15rem 0;
+}
+
+.main_vi .slogan p {
+    font-size: 20rem;
+    font-family: 'Gamja Flower';
+    margin: 0 0 30rem 0;
+}
+
+.main_vi .slogan button {
+    position: relative;
+    width: 150rem;
+    height: 50rem;
+    font-size: 16rem;
+    font-weight: 300;
+    color: #fff;
+    background: #02652f;
+    border-radius: 50rem;
+    transition: 0.6s;
+}
+
+.main_vi .slogan button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.main_vi .video {
+    position: relative;
+    bottom: 0;
+}
+
+.main_vi .video iframe {
+    position: absolute;
+    left: 0;
+    top: 460rem;
+    width: 680rem;
+    height: 340rem;
+}
+
+.btn_search {
+    display: none;
+    /* 수정 */
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100rem;
+    background: #fff;
+    transform: translate(-50%, 0);
+}
+
+.btn_search .search input[type="text"] {
+    font-size: 20rem;
+    border-bottom: 1px solid #aaa;
+    padding: 5rem;
+}
+
+.btn_search .search button i {
+    font-size: 20rem;
+}
+
+.btn_search .btn_close {
+    position: absolute;
+    max-width: 1200rem;
+    padding: 10rem;
+    margin: 0 auto 0 1150rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_search .btn_close i {
+    font-size: 20rem;
+}
