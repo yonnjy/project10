@@ -13,31 +13,25 @@ $(function () {
     $('.main_slide').slick({
         arrows: false,
         dots: true,
-        // autoplay: true,
-        autoplaySpeed: 5000,
-        pauseOnHover: false,
-        pauseOnFocus: false,
+        fade: true,
     });
 
-    const vdo = $('.itm01 #bgndVideo').YTPlayer({
-        videoURL: '03j_Wx6HTVM',
-        containment: '.video',
-        autoPlay: true,
-        showControls: false,
-        playOnlyIfVisible: true,
+    $('.main_vi .arrows .up').on('click', function () {
+        $('.main_slide').slick('slickPrev');
+    });
+    $('.main_vi .arrows .down').on('click', function () {
+        $('.main_slide').slick('slickNext');
     });
 
-    // $('.main_prem .arrows .left').on('click', function () {
-    //     $('.prem_slide').slick('slickPrev');
-    // });
-    // $('.main_prem .arrows .right').on('click', function () {
-    //     $('.prem_slide').slick('slickNext');
-    // });
 
-    // $('.family_site span').on('click', function () {
-    //     $(this).toggleClass('on');
-    //     $(this).next().toggleClass('on');
-    // })
+    $('.fund_site span').on('click', function () {
+        $(this).toggleClass('on');
+        $(this).next().toggleClass('on');
+    })
+    $('.child_site span').on('click', function () {
+        $(this).toggleClass('on');
+        $(this).next().toggleClass('on');
+    })
 
     $('.btn_top').on('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 500);
