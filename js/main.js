@@ -23,6 +23,12 @@ $(function () {
         $('.main_slide').slick('slickNext');
     });
 
+    $('.cam_slide').slick({
+        arrows: false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+    });
+
 
     $('.fund_site span').on('click', function () {
         $(this).toggleClass('on');

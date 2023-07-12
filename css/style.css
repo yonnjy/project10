@@ -248,44 +248,73 @@
     }
 }
 
-.btn_search {
-    display: none;
-    /* 수정 */
-    /* display: flex; */
-    align-items: center;
-    justify-content: center;
-    position: fixed;
+/* --- suport_campaign --- */
+.main_campaign .tap_list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 20rem 0;
+}
+
+.main_campaign .tap_list>ul {
+    display: flex;
+    gap: 5rem;
+    text-align: center;
+}
+
+.main_campaign .tap_list>ul>li {
+    position: relative;
     overflow: hidden;
-    top: 0;
-    left: 50%;
-    width: 100%;
-    height: 100rem;
-    background: #fff;
-    transform: translate(-50%, 0);
-}
-
-.btn_search .search input[type="text"] {
-    font-size: 20rem;
-    border-bottom: 1px solid #aaa;
-    padding: 5rem;
-}
-
-.btn_search .search button i {
-    font-size: 20rem;
-}
-
-.btn_search .btn_close {
-    position: absolute;
-    max-width: 1200rem;
-    padding: 10rem;
-    margin: 0 auto 0 1150rem;
+    width: 140rem;
+    height: 40rem;
+    line-height: 40rem;
+    padding: 0 5rem 0 0;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    background: transparent;
+    border-radius: 50rem;
     cursor: pointer;
+    transition: 0.5s;
 }
 
-.btn_search .btn_close i {
-    font-size: 20rem;
+.main_campaign .tap_list>ul>li.on {
+    color: #fff;
+    background: #02652f;
+}
+
+.main_campaign .tap_list>ul>li::before {
+    content: "";
+    position: absolute;
+    left: -5rem;
+    width: 0;
+    height: 100%;
+    background: #02652f;
+    border: 1px solid #02652f;
+    z-index: -1;
+}
+.main_campaign .tap_list>ul>li:hover {
+    color: #fff;
+}
+.main_campaign .tap_list>ul>li:hover::before {
+    transition: 0.5s ease-in-out;
+    width: 110%;
+}
+
+
+.main_campaign .tap_con .cam_slide {
+    display: flex;
+    margin: 0 -15rem;
+}
+
+.main_campaign .tap_con figure {
+    padding: 0 15rem;
+}
+
+.main_campaign .tap_con .img_box {
+}
+
+.main_campaign .tap_con .img_box img {
+    width: 270rem;
+    height: 270rem;
+    object-fit: cover;
 }
 
 /* --- footer --- */
