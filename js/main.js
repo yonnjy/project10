@@ -27,6 +27,15 @@ $(function () {
         arrows: false,
         slidesToShow: 4,
         slidesToScroll: 4,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     });
 
     $('.main_cam .arrows .left').on('click', function () {
@@ -44,7 +53,7 @@ $(function () {
             countNum: countTo
           },
           {
-            duration: 2000,
+            duration: 5000,
             easing:'linear',
             step: function() {
               $this.text(Math.floor(this.countNum));
