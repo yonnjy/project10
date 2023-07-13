@@ -70,13 +70,12 @@
 }
 
 .main_vi .itm {
-    height: calc(100vh - 80rem);
+    height: calc(100vh - 70rem);
 
 }
 
 .main_vi .itm01 {
     background: url(../images/main_vi01.jpg) #ddd no-repeat 200rem center/cover;
-
 }
 
 .main_vi .itm02 {
@@ -248,20 +247,63 @@
     }
 }
 
-/* --- suport_campaign --- */
-.main_campaign .tap_list {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 0 20rem 0;
+/* support_menu */
+.main_supp {
+    position: relative;
+    height: 110rem;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0 0 10rem 0;
 }
 
-.main_campaign .tap_list>ul {
+.main_supp ul {
     display: flex;
-    gap: 5rem;
+    gap: 200rem;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.main_supp ul li {
+    position: relative;
+}
+
+.main_supp ul li a {
+    font-size: 20rem;
+    color: #fff;
+    line-height: 110rem;
+}
+
+.main_supp .supp_bg::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: -50rem;
+    width: 100vw;
+    height: 130px;
+    background: #02652f;
+    z-index: -1;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* --- suport_campaign --- */
+.main_cam {
+    position: relative;
+}
+
+.main_cam .tap_list {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20rem 0;
     text-align: center;
 }
 
-.main_campaign .tap_list>ul>li {
+.main_cam .tap_list>ul {
+    display: flex;
+    gap: 5rem;
+}
+
+.main_cam .tap_list>ul>li {
     position: relative;
     overflow: hidden;
     width: 140rem;
@@ -275,12 +317,12 @@
     transition: 0.5s;
 }
 
-.main_campaign .tap_list>ul>li.on {
+.main_cam .tap_list>ul>li.on {
     color: #fff;
     background: #02652f;
 }
 
-.main_campaign .tap_list>ul>li::before {
+.main_cam .tap_list>ul>li::before {
     content: "";
     position: absolute;
     left: -5rem;
@@ -290,31 +332,256 @@
     border: 1px solid #02652f;
     z-index: -1;
 }
-.main_campaign .tap_list>ul>li:hover {
+
+.main_cam .tap_list>ul>li:hover {
     color: #fff;
 }
-.main_campaign .tap_list>ul>li:hover::before {
+
+.main_cam .tap_list>ul>li:hover::before {
     transition: 0.5s ease-in-out;
     width: 110%;
 }
 
+.main_cam .tap_list>ul>li a {
+    padding: 0 0 0 14rem;
+}
 
-.main_campaign .tap_con .cam_slide {
+.main_cam .tap_con .cam_slide {
     display: flex;
     margin: 0 -15rem;
 }
 
-.main_campaign .tap_con figure {
+.main_cam .tap_con figure {
     padding: 0 15rem;
 }
 
-.main_campaign .tap_con .img_box {
+.main_cam .tap_con .img_box {
+    overflow: hidden;
 }
 
-.main_campaign .tap_con .img_box img {
+.main_cam .tap_con .img_box img {
     width: 270rem;
     height: 270rem;
     object-fit: cover;
+    transition: 0.5s;
+}
+
+.main_cam .tap_con figure:hover img {
+    transform: scale(1.08);
+}
+
+.main_cam .tap_con .txt_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 120rem;
+    padding: 0 20rem 5rem 20rem;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.main_cam .tap_con strong {
+    display: block;
+    font-size: 20rem;
+    font-weight: 500;
+    margin: 0 0 15rem 0;
+}
+
+.main_cam .tap_con span {
+    position: relative;
+    font-size: 13rem;
+}
+
+.main_cam .tap_con span i {
+    position: absolute;
+    left: 50%;
+    transform: translate(-75rem, 0);
+}
+
+.main_cam .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    max-width: 1300rem;
+    width: 100%;
+    font-size: 40rem;
+    color: #888;
+}
+
+.main_cam .arrows>* {
+    position: absolute;
+    cursor: pointer;
+}
+
+.main_cam .arrows .left {
+    left: 0;
+}
+
+.main_cam .arrows .right {
+    right: 0;
+}
+
+/* --- open_openbiz --- */
+.main_biz {}
+
+/* .main_biz::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100rem;
+    height: 4px;
+    border-radius: 5rem;
+    background: rgba(2, 101, 47, 0.1);
+} */
+
+.main_biz .biz_wrap {
+    text-align: center;
+}
+
+.main_biz .biz_btn {
+    margin: 0 0 30rem 0;
+}
+
+.main_biz .biz_btn>ul {
+    display: flex;
+    justify-content: center;
+    gap: 20rem;
+}
+
+.main_biz .biz_btn>ul>li {
+    width: 300rem;
+    line-height: 50rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 50rem;
+    font-size: 14rem;
+    background: #02652f;
+    padding: 0 8rem 0 0;
+}
+
+.main_biz .biz_btn>ul>li a {
+    display: block;
+    width: 100%;
+}
+
+.main_biz .biz_btn>ul>li i {}
+
+.main_biz .biz_count {
+    margin: 0 0 30rem 0;
+}
+
+.main_biz .biz_count ul {
+    display: flex;
+    justify-content: center;
+    gap: 30rem;
+}
+
+.main_biz .biz_count ul li {
+    width: 175rem;
+}
+
+.main_biz .biz_count strong {
+    font-size: 50rem;
+    font-weight: 900;
+}
+
+.main_biz .biz_count span {
+    font-size: 20rem;
+    font-weight: 700;
+}
+
+.main_biz .biz_count p {
+    font-size: 12rem;
+    line-height: 30rem;
+}
+
+.main_biz .biz_logos {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.main_biz .biz_logos li {
+    width: 150rem;
+    height: 150rem;
+    padding: 15rem 10rem 0;
+    border: 1px solid rgba(2, 101, 47, 0.1);
+    border-radius: 10rem;
+}
+
+.main_biz .biz_logos .img_box {
+    margin: 0 0 10rem 0;
+    padding: 5rem;
+}
+
+.main_biz .biz_logos .img_box img {
+    width: 100rem;
+}
+
+.main_biz .biz_logos strong {
+    font-size: 13rem;
+}
+
+/* --- accountable_now --- */
+.main_acc {
+    position: relative;
+    height: 300rem;
+}
+
+.main_acc .acc_bg {
+    width: 100%;
+    height: 100%;
+    background: #d8f9ff;
+}
+
+/* .main_acc .acc_bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/accountablenow.png) no-repeat center center;
+    background-size: 80%;
+    background-blend-mode: multiply;
+    background-color: #a6cce1;
+    opacity: 20%;
+    width: 100%;
+    height: 100%;
+} */
+
+.main_acc .txt_box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main_acc strong {
+    display: inline-block;
+    width: 170rem;
+    line-height: 40rem;
+    color: #fff;
+    font-size: 14rem;
+    border-radius: 50rem;
+    background: #0A849C;
+    margin: 0 0 10rem 0;
+}
+
+.main_acc h2 {
+    font-size: 24rem;
+    font-weight: 700;
+    margin: 0 0 20rem 0;
+}
+
+.main_acc h2 span {
+    color: #0A849C;
+}
+
+.main_acc p {
+    font-size: 14rem;
 }
 
 /* --- footer --- */

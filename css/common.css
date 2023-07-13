@@ -35,13 +35,17 @@ html {
 
 .sec .tit {
     max-width: 1200rem;
-    margin: 0 auto 30rem auto;
+    margin: 0 auto 50rem auto;
+    text-align: center;
 }
 
 .sec .tit h2 {
     font-size: 30rem;
     font-weight: 700;
     margin: 0 0 10rem 0;
+}
+.sec .tit h2 span {
+    color: #02652f;
 }
 
 .sec .tit p {

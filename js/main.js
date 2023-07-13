@@ -29,6 +29,38 @@ $(function () {
         slidesToScroll: 4,
     });
 
+    $('.main_cam .arrows .left').on('click', function () {
+        $('.cam_slide').slick('slickPrev');
+    });
+    $('.main_cam .arrows .right').on('click', function () {
+        $('.cam_slide').slick('slickNext');
+    });
+
+    $('.count_num').each(function(){
+        var $this = $(this),
+        countTo = $this.attr('data-count');
+
+        $({ countNum: $this.text()}).animate({
+            countNum: countTo
+          },
+          {
+            duration: 2000,
+            easing:'linear',
+            step: function() {
+              $this.text(Math.floor(this.countNum));
+            },
+            complete: function() {
+              $this.text(this.countNum);
+            }
+          });
+    });
+
+    $('.story_wrap>*').on('click', function (e) {
+        e.preventDefault();
+        $(this).addClass('on').siblings().removeClass('on');
+    });
+
+
 
     $('.fund_site span').on('click', function () {
         $(this).toggleClass('on');
