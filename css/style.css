@@ -891,6 +891,10 @@
         padding: 0 0 0 5rem;
     }
 
+    .main_cam .tap_con {
+        height: auto;
+    }
+
     .main_cam .tap_con .cam_slide {
         display: flex;
         margin: 0 -15rem;
