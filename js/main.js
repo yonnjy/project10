@@ -23,7 +23,7 @@ $(function () {
         $('.main_slide').slick('slickNext');
     });
 
-    $('.cam_slide').slick({
+    $('.cam_wrap').slick({
         arrows: false,
         slidesToShow: 4,
         slidesToScroll: 4,
@@ -39,10 +39,10 @@ $(function () {
     });
 
     $('.main_cam .arrows .left').on('click', function () {
-        $('.cam_slide').slick('slickPrev');
+        $('.cam_wrap').slick('slickPrev');
     });
     $('.main_cam .arrows .right').on('click', function () {
-        $('.cam_slide').slick('slickNext');
+        $('.cam_wrap').slick('slickNext');
     });
 
     $('.count_num').each(function(){
@@ -69,7 +69,16 @@ $(function () {
         $(this).addClass('on').siblings().removeClass('on');
     });
 
+    $('.tap_list li').on('click', function (event) {
+        event.preventDefault();
 
+        let idx = $(this).index();
+        $(this).addClass('on')
+            .siblings().removeClass('on');
+
+        $('.cam_slide').eq(idx).addClass('on')
+            .siblings().removeClass('on');
+    });
 
     $('.fund_site span').on('click', function () {
         $(this).toggleClass('on');
